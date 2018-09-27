@@ -1,6 +1,9 @@
 from imdb import IMDb
 import json
+from cachetools import cached, TTLCache  # 1 - let's import the "cached" decorator and the "TTLCache" object from cachetools
+cache = TTLCache(maxsize=100, ttl=300)  # 2 - let's create the cache object.
 
+@cached(cache)  # 3 - it's time to decorate the method to use our cache system!
 def retrive_movie_details_by_title(title, ano_lancamento):
 
     ia = IMDb()
