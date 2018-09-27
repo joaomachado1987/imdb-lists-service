@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn imdb-lists-service:app
