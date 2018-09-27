@@ -1,5 +1,4 @@
 from imdb import IMDb
-import flask
 import json
 
 def retrive_movie_details_by_title(title, ano_lancamento):
