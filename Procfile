@@ -1,0 +1,1 @@
+FLASK_APP=imdb_list_details_client.py flask run
