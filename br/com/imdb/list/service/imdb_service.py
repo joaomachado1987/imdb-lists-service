@@ -5,7 +5,7 @@ cache = TTLCache(maxsize=100, ttl=300)  # 2 - let's create the cache object.
 
 @cached(cache)  # 3 - it's time to decorate the method to use our cache system!
 def retrive_movie_details_by_title(title, ano_lancamento):
-
+    print(" Iniciando processo de pesquisa no IMDB para o filme " + title)
     ia = IMDb()
 
     movies = ia.search_movie(title)
