@@ -16,3 +16,5 @@ Para subir no heroku:
     - fazendo o deploy: $git push heroku master
     - talvez precise informar a escala: heroku ps:scale web=1
 
+exemplo de chamada:
+https://client-imdb-movie-details.herokuapp.com/movie/title/senhor%20dos%20aneis/year/2003
